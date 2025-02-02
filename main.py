@@ -14,12 +14,15 @@ class Veterinario(Persona):
         Veterinarios=[]
 
 class Mascota:
-    def __init__(self, nombre, especie, edad, raza, historial_citas):
+    def __init__(self, nombre, especie, edad, raza, historial_citas,cliente):
         self.nombre = nombre
         self.especie = especie
         self.edad = edad
         self.raza = raza
         self.historial_citas = historial_citas
+        self.cliente = cliente
+
+
 
 def menu():
     while True:
