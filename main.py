@@ -1,8 +1,17 @@
-class Cliente:
-    def __init__(self, nombre, contacto, direccion):
+class Persona:
+    def __init__(self, nombre, edad):
         self.nombre = nombre
+        self.edad = edad
+class Cliente(Persona):
+    def __init__(self, nombre, edad, contacto, direccion):
+        super().__init__(nombre, edad)
         self.contacto = contacto
-        self.direccion = direccion
+        self.direccion= direccion
+        clientes = []
+class Veterinario(Persona):
+    def __init__(self, nombre, edad):
+        super().__init__(nombre, edad)
+        Veterinarios=[]
 
 class Mascota:
     def __init__(self, nombre, especie, edad, raza, historial_citas):
